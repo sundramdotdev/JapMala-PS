@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sundramdotdev.github.io/JapMala/sitemap.xml

@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JapMala (जपमाला) - Your Digital Japa Mala | हर नाम में भक्ति।</title>
+  
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="Experience the peace of Naam Jap with JapMala, a beautiful digital mala for devotees. Count chants effortlessly with Rudraksha & Tulsi malas, track daily progress, offline & 100% private.">
+  <meta name="keywords" content="JapMala, Digital Japa Mala, Naam Jap Counter, Rudraksha Mala App, Hindi Japa Counter, Digital Mala, Offline Japa Counter, Hindu Devotional App, जपमाला, हर नाम में भक्ति">
+  <meta name="author" content="Sundramdotdev">
+  <meta name="theme-color" content="#D97724">
+  <link rel="canonical" href="https://sundramdotdev.github.io/JapMala">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sundramdotdev.github.io/JapMala">
+  <meta property="og:title" content="JapMala (जपमाला) - हर नाम में भक्ति।">
+  <meta property="og:description" content="A peaceful digital mala for every devotee. Traditional Rudraksha beads, 108 chanting counter, offline and private.">
+  <meta property="og:image" content="assets/JapMalalogo.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JapMala (जपमाला) - Digital Japa Mala">
+  <meta name="twitter:description" content="Every Chant, A Step Closer to Peace. Beautiful digital mala with Rudraksha & Tulsi bead counters.">
+  <meta name="twitter:image" content="assets/JapMalalogo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/JapMalalogo.png">
+  <link rel="apple-touch-icon" href="assets/JapMalalogo.png">
+
+  <!-- Google Fonts: Poppins, Noto Sans Devanagari, Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header class="navbar" role="banner">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand" aria-label="JapMala Home">
+        <div class="brand-logo-wrap">
+          <img src="assets/JapMalalogo.png" alt="JapMala Logo" class="brand-logo" width="44" height="44">
+        </div>
+        <div class="brand-text">
+          <div class="brand-title">
+            JapMala <span class="brand-title-hindi">जपमाला</span>
+          </div>
+          <span class="brand-tagline">हर नाम में भक्ति।</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu navbar-menu-desktop" role="navigation" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+      </nav>
+
+      <!-- Nav CTA & Mobile Hamburger -->
+      <div class="nav-actions">
+        <a href="#download" class="btn btn-primary btn-sm navbar-menu-desktop">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download App</span>
+        </a>
+
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-links">
+        <a href="#home" class="mobile-nav-link active">
+          <span>Home</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="#features" class="mobile-nav-link">
+          <span>Features</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="#how-it-works" class="mobile-nav-link">
+          <span>How It Works</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="about.html" class="mobile-nav-link">
+          <span>About JapMala</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="privacy-policy.html" class="mobile-nav-link">
+          <span>Privacy Policy</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </div>
+
+      <div class="mobile-nav-footer">
+        <a href="#download" class="btn btn-primary btn-lg mobile-nav-close">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download for Android</span>
+        </a>
+        <p style="text-align: center; font-size: 0.8rem; color: var(--color-text-muted);">
+          Designed & Developed by Sundramdotdev
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="home" class="hero" aria-label="Introduction to JapMala">
+      <div class="hero-glow-1"></div>
+      <div class="hero-glow-2"></div>
+
+      <div class="container hero-layout">
+        <!-- Hero Left Column -->
+        <div class="hero-content reveal">
+          <div class="hero-eyebrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span>A DIGITAL MALA FOR EVERY DEVOTEE</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-title-highlight">हर नाम में भक्ति।</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            Your Digital Japa Mala.
+          </div>
+
+          <p class="hero-description">
+            Experience the peace of Naam Jap with JapMala, a simple and beautiful digital mala designed for devotees. Carry your spiritual practice wherever life takes you.
+          </p>
+
+          <!-- Supporting Value Points -->
+          <div class="hero-points">
+            <div class="hero-point-item">
+              <svg class="hero-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Count every chant effortlessly</span>
+            </div>
+
+            <div class="hero-point-item">
+              <svg class="hero-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Choose your favourite mantra</span>
+            </div>
+
+            <div class="hero-point-item">
+              <svg class="hero-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Track your daily spiritual journey</span>
+            </div>
+
+            <div class="hero-point-item">
+              <svg class="hero-point-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Practice anytime, anywhere</span>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="hero-cta-group">
+            <a href="#download" class="btn btn-primary btn-lg">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9996.4482.9996.9993 0 .5511-.4486.9997-.9996.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9997.4482.9997.9993 0 .5511-.4486.9997-.9997.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.411 13.8532 8.082 12 8.082s-3.5902.329-5.1368.8677L4.8409 5.4467a.4161.4161 0 00-.5677-.1521.4157.4157 0 00-.152 5676l1.9972 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3432-4.1021-2.6889-7.5743-6.1185-9.4396"/>
+              </svg>
+              <span>Download for Android</span>
+            </a>
+
+            <a href="#features" class="btn btn-secondary btn-lg">
+              <span>Explore Features</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Trust Badges Strip -->
+          <div class="hero-badges-strip">
+            <div class="hero-badge-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <span>100% Private & Local</span>
+            </div>
+            <div class="hero-badge-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 1l22 22"></path><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path><path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+              <span>Works Completely Offline</span>
+            </div>
+            <div class="hero-badge-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Zero Ads & Distraction-free</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Realistic Devotional Smartphone Mockup -->
+        <div class="phone-mockup-wrapper reveal reveal-delay-2">
+          <div class="phone-mockup-glow"></div>
+
+          <div class="phone-frame" aria-label="Interactive JapMala App Preview">
+            <div class="phone-notch">
+              <div class="phone-camera"></div>
+            </div>
+
+            <div class="phone-screen">
+              <!-- Interactive App UI inside Mockup -->
+              <div class="app-ui">
+                <!-- Status bar -->
+                <div class="app-ui-status-bar">
+                  <span>05:30 AM</span>
+                  <div style="display:flex; gap: 6px; align-items:center;">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h2v2h-2zm0-10h2v8h-2z"/></svg>
+                    <span>100%</span>
+                  </div>
+                </div>
+
+                <!-- App Header -->
+                <div class="app-ui-header">
+                  <div class="app-ui-deity-pill">
+                    <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#FF9F43;"></span>
+                    <span>रुद्राक्ष माला</span>
+                  </div>
+                  <div class="app-ui-settings-icon" title="Sound and Haptics Active">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                  </div>
+                </div>
+
+                <!-- Interactive Mala Bead Area -->
+                <div class="app-ui-mala-container interactive-mala-area" title="Tap to chant">
+                  <div class="app-ui-mala-circle">
+                    <!-- Circular bead ring populated via JS -->
+                    <div class="mala-bead-ring"></div>
+
+                    <!-- Inner Counter Disc -->
+                    <div class="app-ui-counter-box">
+                      <div class="app-ui-count-num">007</div>
+                      <div class="app-ui-count-target">/ 108 Chants</div>
+                      <div class="app-ui-mala-badge">2 Malas Completed (216 Total)</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Active Mantra Card -->
+                <div class="app-ui-mantra-card">
+                  <div class="app-ui-mantra-hindi">ॐ नमः शिवाय</div>
+                  <div class="app-ui-mantra-meaning">Tap anywhere on the mala circle to count chant</div>
+                </div>
+
+                <!-- App Navigation Bar -->
+                <div class="app-ui-bottom-bar">
+                  <div class="app-ui-bar-item active">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle></svg>
+                    <span>Japa</span>
+                  </div>
+                  <div class="app-ui-bar-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                    <span>Mantra</span>
+                  </div>
+                  <div class="app-ui-bar-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    <span>Analytics</span>
+                  </div>
+                  <div class="app-ui-bar-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    <span>Settings</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tap hint callout -->
+            <div class="mockup-tap-hint">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span>Tap the Mala to simulate chanting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== APP SHOWCASE SECTION ==================== -->
+    <section id="showcase" class="section section-dark" aria-label="Application Showcase">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow">DEVOTIONAL EXPERIENCE</div>
+          <h2 class="section-title">A Peaceful Way to Practice Naam Jap</h2>
+          <p class="section-subtitle">
+            Every screen and interaction is crafted with reverence, bringing the sacred rhythm of traditional malas to modern devices.
+          </p>
+        </div>
+
+        <div class="showcase-grid">
+          <!-- Showcase 1: Rudraksha Mala -->
+          <div class="showcase-card reveal reveal-delay-1">
+            <div class="showcase-preview-frame">
+              <div class="preview-mala-visual">
+                <div class="preview-counter-text">108</div>
+              </div>
+            </div>
+            <h3 class="showcase-card-title">
+              <svg class="showcase-card-title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a10 10 0 0 1 10 10"></path></svg>
+              <span>Digital Rudraksha Mala</span>
+            </h3>
+            <p class="showcase-card-desc">
+              Experience authentic 108-bead circular Rudraksha beads with genuine textures, Meru bead marker, and gentle bead-advance motion.
+            </p>
+            <div class="showcase-badge-list">
+              <span class="showcase-badge">Traditional Texture</span>
+              <span class="showcase-badge">Meru Bead Indicator</span>
+              <span class="showcase-badge">Haptic Pulse</span>
+            </div>
+          </div>
+
+          <!-- Showcase 2: Tulsi Mala Option -->
+          <div class="showcase-card reveal reveal-delay-2">
+            <div class="showcase-preview-frame">
+              <div class="preview-mala-visual" style="border-color: var(--color-gold);">
+                <div class="preview-counter-text" style="color: var(--color-gold);">तुलसी</div>
+              </div>
+            </div>
+            <h3 class="showcase-card-title">
+              <svg class="showcase-card-title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+              <span>Tulsi Mala Option</span>
+            </h3>
+            <p class="showcase-card-desc">
+              Seamlessly switch between sacred Rudraksha and sacred Tulsi malas to match your deity practice and personal spiritual affinity.
+            </p>
+            <div class="showcase-badge-list">
+              <span class="showcase-badge">Krishna & Rama Jap</span>
+              <span class="showcase-badge">Natural Wood Finish</span>
+              <span class="showcase-badge">Custom Sizes</span>
+            </div>
+          </div>
+
+          <!-- Showcase 3: Floating Mantra Animation -->
+          <div class="showcase-card reveal reveal-delay-3">
+            <div class="showcase-preview-frame">
+              <div style="font-family: var(--font-hindi); font-size: 1.6rem; color: var(--color-saffron-light); text-align: center; font-weight: 700;">
+                ॐ नमः शिवाय
+                <div style="font-size: 0.8rem; color: var(--color-gold); margin-top: 6px; font-family: var(--font-sans); font-weight: 500;">
+                  Gentle Floating Mantra
+                </div>
+              </div>
+            </div>
+            <h3 class="showcase-card-title">
+              <svg class="showcase-card-title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+              <span>Floating Mantra Animation</span>
+            </h3>
+            <p class="showcase-card-desc">
+              Witness your sacred mantra gently materialize and float upward with every chant, deepening focus and meditative presence.
+            </p>
+            <div class="showcase-badge-list">
+              <span class="showcase-badge">Meditative Visual</span>
+              <span class="showcase-badge">Custom Mantras</span>
+              <span class="showcase-badge">Devanagari Script</span>
+            </div>
+          </div>
+
+          <!-- Showcase 4: Tap Anywhere to Count -->
+          <div class="showcase-card reveal reveal-delay-1">
+            <div class="showcase-preview-frame">
+              <div style="text-align: center; color: var(--color-ivory);">
+                <div style="font-size: 2.8rem; font-weight: 700; color: var(--color-saffron-light); line-height: 1;">+1</div>
+                <div style="font-size: 0.82rem; color: var(--color-text-muted-on-dark); margin-top: 6px;">Tap Anywhere</div>
+              </div>
+            </div>
+            <h3 class="showcase-card-title">
+              <svg class="showcase-card-title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+              <span>Tap Anywhere to Count</span>
+            </div>
+            <p class="showcase-card-desc">
+              No need to look at specific buttons. Close your eyes, immerse in the chant, and tap anywhere on the screen with complete ease.
+            </p>
+            <div class="showcase-badge-list">
+              <span class="showcase-badge">Full Screen Target</span>
+              <span class="showcase-badge">Eyes-Closed Chanting</span>
+              <span class="showcase-badge">Volume Key Counting</span>
+            </div>
+          </div>
+
+          <!-- Showcase 5: Analytics Dashboard -->
+          <div class="showcase-card reveal reveal-delay-2">
+            <div class="showcase-preview-frame">
+              <div class="preview-analytics-bars">
+                <div class="analytics-bar" style="height: 45px;" data-day="Mon"></div>
+                <div class="analytics-bar" style="height: 75px;" data-day="Tue"></div>
+                <div class="analytics-bar" style="height: 60px;" data-day="Wed"></div>
+                <div class="analytics-bar" style="height: 95px;" data-day="Thu"></div>
+                <div class="analytics-bar" style="height: 110px;" data-day="Fri"></div>
+                <div class="analytics-bar" style="height: 80px;" data-day="Sat"></div>
+                <div class="analytics-bar" style="height: 125px;" data-day="Sun"></div>
+              </div>
+            </div>
+            <h3 class="showcase-card-title">
+              <svg class="showcase-card-title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              <span>Daily & Weekly Analytics</span>
+            </h3>
+            <p class="showcase-card-desc">
+              Track completed malas, total mantra repetitions, daily streaks, and spiritual dedication over weeks and months.
+            </p>
+            <div class="showcase-badge-list">
+              <span class="showcase-badge">Mala Streaks</span>
+              <span class="showcase-badge">Total Repetitions</span>
+              <span class="showcase-badge">Local History</span>
+            </div>
+          </div>
+
+          <!-- Showcase 6: Hindi and English Interface -->
+          <div class="showcase-card reveal reveal-delay-3">
+            <div class="showcase-preview-frame">
+              <div style="display: flex; gap: 14px; align-items: center;">
+                <span style="font-family: var(--font-hindi); font-size: 1.5rem; font-weight: 700; color: var(--color-gold-light);">हिंदी</span>
+                <span style="color: var(--color-saffron);">|</span>
+                <span style="font-size: 1.4rem; font-weight: 600; color: var(--color-ivory);">English</span>
+              </div>
+            </div>
+            <h3 class="showcase-card-title">
+              <svg class="showcase-card-title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              <span>Bilingual Experience</span>
+            </h3>
+            <p class="showcase-card-desc">
+              Designed from the ground up for Indian devotees with seamless one-tap switching between Pure Hindi (Devanagari) and English.
+            </p>
+            <div class="showcase-badge-list">
+              <span class="showcase-badge">Hindi Devanagari</span>
+              <span class="showcase-badge">English Localization</span>
+              <span class="showcase-badge">Native Tone</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURES SECTION ==================== -->
+    <section id="features" class="section" aria-label="Key Features">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow">SACRED FEATURES</div>
+          <h2 class="section-title">Everything You Need for Your Daily Japa</h2>
+          <p class="section-subtitle">
+            Thoughtfully engineered to preserve the sanctity of traditional japa while embracing the convenience of modern smartphone technology.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+            </div>
+            <h3 class="feature-title">Digital 108-Bead Mala</h3>
+            <p class="feature-desc">
+              Experience a traditional mala digitally with beautiful Rudraksha and Tulsi bead designs. Feel the sacred progression towards completion.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"></path><path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"></path><path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"></path><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"></path></svg>
+            </div>
+            <h3 class="feature-title">Tap Anywhere to Count</h3>
+            <p class="feature-desc">
+              One simple tap anywhere on the Japa screen increments your chanting count, allowing you to chant with closed eyes in deep meditation.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card reveal reveal-delay-3">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            </div>
+            <h3 class="feature-title">Your Favourite Mantras</h3>
+            <p class="feature-desc">
+              Choose from predefined devotional mantras for Mahadev, Shri Ram, Krishna, Hanuman, and Durga, or add your own custom mantra easily.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <h3 class="feature-title">Floating Mantra Animation</h3>
+            <p class="feature-desc">
+              See your selected mantra gently appear and float with every repetition, providing a captivating and meditative visual rhythm.
+            </p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>
+            </div>
+            <h3 class="feature-title">Daily, Weekly & Monthly Analytics</h3>
+            <p class="feature-desc">
+              Track your completed malas, total repetitions, and daily chanting progress with serene visual charts and spiritual milestones.
+            </p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="feature-card reveal reveal-delay-3">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3 class="feature-title">Hindi and English Support</h3>
+            <p class="feature-desc">
+              Use the application in your preferred language with full native Devanagari typography and warm devotional Hindi terminology.
+            </p>
+          </div>
+
+          <!-- Feature 7 -->
+          <div class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="1" y1="1" x2="23" y2="23"></line><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path><path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path><path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+            </div>
+            <h3 class="feature-title">Offline First</h3>
+            <p class="feature-desc">
+              Practice in temples, during mountain pilgrimages, or on journeys without requiring an active internet connection.
+            </p>
+          </div>
+
+          <!-- Feature 8 -->
+          <div class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <h3 class="feature-title">Private and Personal</h3>
+            <p class="feature-desc">
+              Your sacred Japa history stays 100% locally on your device. Zero telemetry, zero tracking, and zero advertising intrusion.
+            </p>
+          </div>
+
+          <!-- Feature 9 -->
+          <div class="feature-card reveal reveal-delay-3">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            </div>
+            <h3 class="feature-title">Custom Mala Settings</h3>
+            <p class="feature-desc">
+              Choose traditional 108 beads, half-mala (54), quarter-mala (27), or specify a custom count to accommodate specialized sadhanas.
+            </p>
+          </div>
+
+          <!-- Feature 10 -->
+          <div class="feature-card reveal reveal-delay-2" style="grid-column: 1 / -1; max-width: 680px; margin: 0 auto; width: 100%;">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+            </div>
+            <h3 class="feature-title">Save Your Spiritual Journey</h3>
+            <p class="feature-desc">
+              Safely backup and restore your local chanting records and mantra library whenever migrating devices or managing your devotional history.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== HOW IT WORKS SECTION ==================== -->
+    <section id="how-it-works" class="section" style="background-color: var(--color-beige-light);" aria-label="How It Works">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow">SIMPLE & INTUITIVE</div>
+          <h2 class="section-title">Start Your Naam Jap in Three Simple Steps</h2>
+          <p class="section-subtitle">
+            Designed to remove all digital complexity so your mind remains peacefully focused on the divine name.
+          </p>
+        </div>
+
+        <div class="how-it-works-timeline">
+          <!-- Step 1 -->
+          <div class="step-card reveal reveal-delay-1">
+            <div class="step-number-badge">1</div>
+            <h3 class="step-title">Choose Your Mantra</h3>
+            <p class="step-desc">
+              Select from predefined devotional mantras for your beloved Ishta-Devata, or add a custom prayer or affirmation.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card reveal reveal-delay-2">
+            <div class="step-number-badge">2</div>
+            <h3 class="step-title">Start Chanting</h3>
+            <p class="step-desc">
+              Tap anywhere on the screen and move through your digital mala with subtle haptic vibrations keeping your rhythm.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card reveal reveal-delay-3">
+            <div class="step-number-badge">3</div>
+            <h3 class="step-title">Track Your Journey</h3>
+            <p class="step-desc">
+              View your daily, weekly, and monthly chanting progress and witness your sadhana grow day after day.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT JAPMALA SECTION ==================== -->
+    <section id="about" class="section" aria-label="About JapMala">
+      <div class="container">
+        <div class="about-section-layout">
+          <!-- Left: Narrative -->
+          <div class="about-text-col reveal">
+            <div class="section-eyebrow">PURPOSE & DEVOTION</div>
+            <h2 class="section-title">About JapMala</h2>
+
+            <p class="about-lead">
+              JapMala was created with a simple purpose: to make daily Naam Jap easier, peaceful, and accessible for everyone.
+            </p>
+
+            <p class="about-p">
+              Inspired by the traditional Rudraksha and Tulsi malas used by devotees for centuries, JapMala brings the experience of devotional chanting into a simple digital companion that rests quietly in your pocket.
+            </p>
+
+            <p class="about-p">
+              Whether you chant the name of Mahadev, Shri Ram, Krishna, Hanuman, Maa Durga or your favourite deity, JapMala helps you maintain your daily spiritual practice with complete peace of mind.
+            </p>
+
+            <!-- Deities Pills -->
+            <div class="about-deity-pills">
+              <span class="deity-pill">महादेव शिव</span>
+              <span class="deity-pill">श्री राम</span>
+              <span class="deity-pill">श्री कृष्ण</span>
+              <span class="deity-pill">बजरंगबली हनुमान</span>
+              <span class="deity-pill">माँ दुर्गा</span>
+              <span class="deity-pill">गणेश जी</span>
+            </div>
+
+            <p class="about-p">
+              We believe technology should support devotion, not distract from it. JapMala is designed to be peaceful, simple, private and completely free of noisy interruptions.
+            </p>
+
+            <!-- Devotional Quote -->
+            <div class="about-quote-box">
+              <div class="about-quote-hindi">हर नाम में भक्ति, हर माला में शांति।</div>
+              <div class="about-quote-eng">Every Chant, A Step Closer to Peace.</div>
+            </div>
+
+            <div style="margin-top: 14px;">
+              <a href="about.html" class="btn btn-secondary">
+                <span>Read Full Story & Philosophy</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Visual Card -->
+          <div class="about-visual-col reveal reveal-delay-2">
+            <div class="about-visual-card">
+              <div style="margin-bottom: 24px; display: flex; align-items: center; gap: 14px;">
+                <img src="assets/JapMalalogo.png" alt="JapMala" style="width: 56px; height: 56px; border-radius: 12px; border: 1px solid rgba(196,154,72,0.3); background:#FFF; padding:2px;">
+                <div>
+                  <h4 style="font-size: 1.35rem; font-weight: 700; color: var(--color-dark);">The Devotional Promise</h4>
+                  <span style="font-size: 0.85rem; color: var(--color-saffron); font-weight: 600;">Rooted in Ancient Tradition</span>
+                </div>
+              </div>
+
+              <div class="about-feature-list">
+                <div class="about-feature-item">
+                  <div class="about-item-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                  </div>
+                  <div>
+                    <div class="about-item-title">Pure Sattvic Experience</div>
+                    <div class="about-item-desc">No commercial clutter, no banner ads, and no addictive gamification loops. Just pure prayer.</div>
+                  </div>
+                </div>
+
+                <div class="about-feature-item">
+                  <div class="about-item-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  </div>
+                  <div>
+                    <div class="about-item-title">Sacred Data Privacy</div>
+                    <div class="about-item-desc">Your mantras and count counts are your sacred space. Everything remains strictly on your device.</div>
+                  </div>
+                </div>
+
+                <div class="about-feature-item">
+                  <div class="about-item-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                  </div>
+                  <div>
+                    <div class="about-item-title">Devotee-Centric Craftsmanship</div>
+                    <div class="about-item-desc">Built with heartfelt dedication by Sundramdotdev to serve the devotional community worldwide.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DOWNLOAD SECTION ==================== -->
+    <section id="download" class="section download-section" aria-label="Download JapMala for Android">
+      <div class="download-pattern-glow"></div>
+
+      <div class="container">
+        <div class="download-box reveal">
+          <div class="download-grid">
+            <!-- Left Info -->
+            <div class="download-info">
+              <div class="section-eyebrow" style="background: rgba(196,154,72,0.15); border-color: rgba(196,154,72,0.3); color: var(--color-gold-light);">
+                OFFICIAL ANDROID RELEASE
+              </div>
+
+              <h2 class="download-title">Begin Your Journey with JapMala</h2>
+
+              <p class="download-desc">
+                Carry your digital mala wherever you go. Start your daily Naam Jap with JapMala today. Lightweight, battery-friendly, and always ready for prayer.
+              </p>
+
+              <!-- Android download buttons -->
+              <div class="download-buttons-wrapper">
+                <!-- Option 1: Direct APK -->
+                <a href="#download" class="download-btn-card btn-card-apk btn-download-apk" aria-label="Download JapMala Direct APK">
+                  <svg class="btn-card-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9996.4482.9996.9993 0 .5511-.4486.9997-.9996.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9997.4482.9997.9993 0 .5511-.4486.9997-.9997.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.411 13.8532 8.082 12 8.082s-3.5902.329-5.1368.8677L4.8409 5.4467a.4161.4161 0 00-.5677-.1521.4157.4157 0 00-.152 5676l1.9972 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3432-4.1021-2.6889-7.5743-6.1185-9.4396"/>
+                  </svg>
+                  <div>
+                    <div class="btn-card-label">Official Website Direct</div>
+                    <div class="btn-card-main">Download APK</div>
+                  </div>
+                </a>
+
+                <!-- Option 2: APKPure -->
+                <a href="#download" class="download-btn-card btn-card-apkpure btn-download-apkpure" aria-label="Get JapMala on APKPure">
+                  <svg class="btn-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                  <div>
+                    <div class="btn-card-label">Verified Mirror</div>
+                    <div class="btn-card-main">Get it on APKPure</div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Metadata specs -->
+              <div class="download-meta-info">
+                <div class="download-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                  <span>Version: <strong data-config-version>v1.0.0</strong></span>
+                </div>
+                <div class="download-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  <span>Size: <strong data-config-filesize>18.4 MB</strong></span>
+                </div>
+                <div class="download-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                  <span>Requires: <strong data-config-min-android>Android 8.0+</strong></span>
+                </div>
+              </div>
+
+              <!-- Security Notice -->
+              <div class="download-security-notice">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span>Download only from official sources. JapMala APK is digitally signed, virus-free, and contains zero trackers.</span>
+              </div>
+            </div>
+
+            <!-- Right App Spec Card -->
+            <div class="download-app-preview-card">
+              <img src="assets/JapMalalogo.png" alt="JapMala App Icon" class="download-preview-logo">
+              <h3 class="download-preview-name">JapMala (जपमाला)</h3>
+              <p class="download-preview-tagline">हर नाम में भक्ति।</p>
+
+              <div class="download-spec-list">
+                <div class="download-spec-row">
+                  <span>Platform</span>
+                  <span class="download-spec-val">Android</span>
+                </div>
+                <div class="download-spec-row">
+                  <span>License</span>
+                  <span class="download-spec-val">Free Devotional App</span>
+                </div>
+                <div class="download-spec-row">
+                  <span>Internet Connection</span>
+                  <span class="download-spec-val">Not Required (Offline)</span>
+                </div>
+                <div class="download-spec-row">
+                  <span>Target Malas</span>
+                  <span class="download-spec-val">27, 54, 108 & Custom</span>
+                </div>
+                <div class="download-spec-row">
+                  <span>Developer</span>
+                  <span class="download-spec-val">Sundramdotdev</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DEVELOPER CREDIT SECTION ==================== -->
+    <section class="developer-section" aria-label="About Developer">
+      <div class="container">
+        <div class="developer-card reveal">
+          <div class="dev-avatar-wrap">
+            <span>S</span>
+          </div>
+
+          <div class="dev-content">
+            <div class="dev-credit-title">Designed with Devotion. Built with Technology.</div>
+            <h3 class="dev-name">Designed & Developed by Sundramdotdev</h3>
+            <p class="dev-description">
+              JapMala is a devotional mobile application created to bring the traditional experience of Naam Jap into the digital world. Created with care, simplicity, and a focus on serene devotional experiences for devotees worldwide.
+            </p>
+          </div>
+
+          <div class="dev-actions">
+            <a href="javascript:void(0);" class="btn btn-primary dev-linkedin-link" aria-label="Connect with Sundramdotdev on LinkedIn">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>Connect on LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand column -->
+        <div class="footer-brand-col">
+          <div class="footer-logo-wrap">
+            <img src="assets/JapMalalogo.png" alt="JapMala Logo" class="footer-logo-img">
+            <div>
+              <div class="footer-brand-name">JapMala <span class="footer-brand-hindi">जपमाला</span></div>
+            </div>
+          </div>
+          <div class="footer-tagline-hindi">हर नाम में भक्ति।</div>
+          <p class="footer-desc">
+            A peaceful and distraction-free digital Japa Mala application honoring timeless Indian devotional traditions.
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-col">
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#features" class="footer-link">Features</a></li>
+            <li><a href="#how-it-works" class="footer-link">How It Works</a></li>
+            <li><a href="#showcase" class="footer-link">App Showcase</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources Links -->
+        <div class="footer-col">
+          <div class="footer-heading">Devotion & Trust</div>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About JapMala</a></li>
+            <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#download" class="footer-link">Download for Android</a></li>
+          </ul>
+        </div>
+
+        <!-- Developer Links -->
+        <div class="footer-col">
+          <div class="footer-heading">Developer</div>
+          <ul class="footer-links">
+            <li>
+              <a href="javascript:void(0);" class="footer-link dev-linkedin-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>Sundramdotdev on LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="footer-link contact-email-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>Support & Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; <span data-current-year>2026</span> JapMala. All rights reserved.
+        </div>
+        <div class="footer-dev-credit">
+          Designed & Developed by Sundramdotdev
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
