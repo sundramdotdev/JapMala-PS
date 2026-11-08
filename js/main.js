@@ -123,7 +123,7 @@ function initConfigBindings() {
       link.textContent = email;
     } else {
       link.href = "javascript:void(0);";
-      link.textContent = "support@sundram.dev (Coming Soon)";
+      link.textContent = "sundram.devv@gmail.com";
       link.addEventListener("click", (e) => {
         e.preventDefault();
         showToast("Official support email will be active upon release.");

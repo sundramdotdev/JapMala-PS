@@ -40,7 +40,7 @@ const JAPMALA_CONFIG = {
     creditText: "Designed & Developed by Sundramdotdev",
     // LinkedIn profile URL (e.g. "https://www.linkedin.com/in/sundramdotdev")
     // Keep empty "" if not configured.
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/sundramdotdev",
     githubUrl: ""
   },
 
@@ -48,13 +48,13 @@ const JAPMALA_CONFIG = {
   contact: {
     // Official support email address (e.g. "support@sundram.dev")
     // Keep empty "" if contact email is pending setup.
-    email: ""
+    email: "sundram.devv@gmail.com"
   },
 
   // Deployment domain & SEO canonical
   site: {
-    canonicalUrl: "", // e.g. "https://japmala.sundram.dev" or GitHub Pages URL
-    repoUrl: ""
+    canonicalUrl: "https://sundramdotdev.github.io/JapMala-PS/",
+    repoUrl: "https://github.com/Sundramdotdev/JapMala-PS"
   }
 };
 

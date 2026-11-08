@@ -126,12 +126,12 @@ const JAPMALA_CONFIG = {
 
   contact: {
     // 5. Official support email
-    email: "support@sundram.dev"
+    email: "sundram.devv@gmail.com"
   },
 
   site: {
-    canonicalUrl: "https://sundramdotdev.github.io/JapMala",
-    repoUrl: "https://github.com/Sundramdotdev/JapMala"
+    canonicalUrl: "https://sundramdotdev.github.io/JapMala-PS/",
+    repoUrl: "https://github.com/Sundramdotdev/JapMala-PS"
   }
 };
 ```
@@ -169,11 +169,11 @@ The privacy policy lives in `privacy-policy.html` and styles in `css/privacy.css
 ## 8. Deployment Guide
 
 ### Deploying to GitHub Pages (Recommended)
-1. Push this repository to GitHub under your account (e.g., `https://github.com/Sundramdotdev/JapMala`).
+1. Push this repository to GitHub under your account (e.g., `https://github.com/Sundramdotdev/JapMala-PS`).
 2. Go to **Settings > Pages** in your GitHub repository.
 3. Under **Branch**, select `main` (or `master`) and folder `/ (root)`.
 4. Click **Save**.
-5. Your showcase website will be live at `https://<username>.github.io/<repo>/` within 1-2 minutes!
+5. Your showcase website will be live at `https://sundramdotdev.github.io/JapMala-PS/` within 1-2 minutes!
 
 ### Deploying to Netlify
 1. Log in to [Netlify](https://www.netlify.com/).
